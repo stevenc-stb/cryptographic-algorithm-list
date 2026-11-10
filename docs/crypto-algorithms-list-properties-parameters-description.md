@@ -131,11 +131,10 @@ Notes:
 * Applicability: Required when parameters or parameter sets may be appended to the algorithm identifier in a Cryptographic Algorithm Expression. If absent or empty, the algorithm identifier MUST NOT be followed by parameters in an expression.
 * Cardinality: [0..*]
 * Values: A list of position-to-parameter entries. Each entry MUST have the form
-* 
-  [position, parameter-name]
+    * [position, parameter-name]
   where:
- * position is a positive integer representing the 1-based position of the parameter value in a Cryptographic Algorithm Expression.
- * parameter-name is one of the parameter names defined for this algorithm in the parameters description.
+   * position is a positive integer representing the 1-based position of the parameter value in a Cryptographic Algorithm Expression.
+   * parameter-name is one of the parameter names defined for this algorithm in the parameters description.
 
  * Value rules:
    * Position numbers MUST start at 1.
