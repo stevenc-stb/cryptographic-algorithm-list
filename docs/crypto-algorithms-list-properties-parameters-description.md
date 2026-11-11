@@ -131,7 +131,7 @@ Notes:
 * Applicability: Required when parameters or parameter sets may be appended to the algorithm identifier in a Cryptographic Algorithm Expression. If this mapping is absent or empty, the algorithm identifier MUST NOT be followed by parameters in the expression.
 * Cardinality: [0..*]
 * Values: A list of position-to-parameter entries. Each entry MUST have the form
-    * [position, parameter-name]
+   * [position, parameter-name]
  where:
    * position is a positive integer representing the 1-based position of the parameter value in a Cryptographic Algorithm Expression.
    * parameter-name is one of the parameter names defined for this algorithm in the parameters description.
@@ -141,7 +141,7 @@ Notes:
    * Position numbers MUST NOT be duplicated.
    * The parameter-name MUST correspond to a parameter defined for that algorithm.
    * Entries SHOULD be listed in ascending position order for readability.
-   *  The mapping is determined by the position number, not by the order of the text lines themselves.
+   * The mapping is determined by the position number, not by the order of the text lines themselves.
 
     Examples:
 
@@ -149,7 +149,6 @@ Notes:
     grammarExpressionReference:
       - [1, keyLength]
       - [2, operationMode]
-
 
 ## Cryptographic Algorithms parameters description
 
